@@ -28,6 +28,14 @@ const recipes = [
         difficulty: "Facile",
         emoji: "🍰",
     },
+    {
+        id: 4,
+        name: "Salade",
+        description: "Salade fraîche de saison",
+        time: 15,
+        difficulty: "Facile",
+        emoji: "🥗",
+    },
 ];
 </script>
 
