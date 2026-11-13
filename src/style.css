@@ -1,5 +1,21 @@
+/* Réinitialisation générale */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9f7;
+    color: #333;
+} /* Images et éléments */
+button,
+a {
+    cursor: pointer;
+} /* Adaptation mobile */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
 }
