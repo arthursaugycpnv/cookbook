@@ -1,6 +1,7 @@
 <script setup>
 import AppHeader from "./components/AppHeader.vue";
 import RecipeList from "./components/RecipeList.vue";
+import RecipeFooter from "./components/RecipeFooter.vue";
 
 // Les données de nos recettes
 const recipes = [
@@ -55,9 +56,7 @@ const recipes = [
             <!-- Composant enfant : liste des recettes -->
             <RecipeList :recipes="recipes" />
         </main>
-        <footer>
-            <p>© 2026 CookBook - Projet Vue.js CFC</p>
-        </footer>
+        <RecipeFooter />
     </div>
 </template>
 
@@ -76,13 +75,5 @@ const recipes = [
 }
 .hero p {
     color: #526b60;
-}
-footer {
-    background: #173d35;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 13px;
 }
 </style>
