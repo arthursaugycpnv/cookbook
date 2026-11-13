@@ -13,6 +13,7 @@ src/components/RecipeCard.vue
             <p>{{ recipe.description }}</p>
             <div class="recipe-info">
                 <span>⏱ {{ recipe.time }} min</span>
+                <span> Pour {{ recipe.persons }} pers. </span>
                 <span
                     class="difficulty"
                     :class="recipe.difficulty.toLowerCase()"

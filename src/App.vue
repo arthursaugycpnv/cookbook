@@ -11,6 +11,7 @@ const recipes = [
         time: 20,
         difficulty: "Facile",
         emoji: "🍝",
+        persons: 3,
     },
     {
         id: 2,
@@ -19,6 +20,7 @@ const recipes = [
         time: 35,
         difficulty: "Moyen",
         emoji: "🍕",
+        persons: 2,
     },
     {
         id: 3,
@@ -27,6 +29,7 @@ const recipes = [
         time: 45,
         difficulty: "Facile",
         emoji: "🍰",
+        persons: 2,
     },
     {
         id: 4,
@@ -35,6 +38,7 @@ const recipes = [
         time: 15,
         difficulty: "Facile",
         emoji: "🥗",
+        persons: 2,
     },
 ];
 </script>
