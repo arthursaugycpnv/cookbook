@@ -34,8 +34,8 @@ defineProps({
 </script>
 <style scoped>
 .recipe-card {
-    background: white;
-    border-radius: 12px;
+    background: #81c9a1ca;
+    border-radius: 40px;
     overflow: hidden;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.2s;
@@ -45,11 +45,11 @@ defineProps({
 }
 .recipe-image {
     background: #e8f1ec;
-    height: 150px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 65px;
+    font-size: 120px;
 }
 .recipe-content {
     padding: 20px;
@@ -81,5 +81,9 @@ defineProps({
 .moyen {
     background: #fff0ce;
     color: #946000;
+}
+.difficile {
+    background: #e4abab;
+    color: #8d0200;
 }
 </style>

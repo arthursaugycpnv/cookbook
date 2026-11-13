@@ -37,7 +37,7 @@ const recipes = [
         name: "Salade",
         description: "Salade fraîche de saison",
         time: 15,
-        difficulty: "Facile",
+        difficulty: "Difficile",
         emoji: "🥗",
         persons: 2,
     },
