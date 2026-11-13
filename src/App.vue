@@ -1,22 +1,76 @@
 <script setup>
 import AppHeader from "./components/AppHeader.vue";
+import RecipeList from "./components/RecipeList.vue";
+
+// Les données de nos recettes
+const recipes = [
+    {
+        id: 1,
+        name: "Spaghetti",
+        description: "Délicieuses pâtes à la sauce tomate.",
+        time: 20,
+        difficulty: "Facile",
+        emoji: "🍝",
+    },
+    {
+        id: 2,
+        name: "Pizza",
+        description: "Pizza maison aux légumes.",
+        time: 35,
+        difficulty: "Moyen",
+        emoji: "🍕",
+    },
+    {
+        id: 3,
+        name: "Gâteau",
+        description: "Gâteau au chocolat fait maison.",
+        time: 45,
+        difficulty: "Facile",
+        emoji: "🍰",
+    },
+];
 </script>
 
 <template>
-    <div>
+    <div class="app">
+        <!-- Composant enfant : en-tête -->
         <AppHeader />
         <main>
-            <h1>Bienvenue dans ma cuisine !</h1>
-            <p>Découvrez des recettes simples et délicieuses.</p>
+            <section class="hero">
+                <h1>Bienvenue dans ma cuisine !</h1>
+                <p>Découvrez des recettes simples et délicieuses.</p>
+            </section>
+            <!-- Composant enfant : liste des recettes -->
+            <RecipeList :recipes="recipes" />
         </main>
+        <footer>
+            <p>© 2026 CookBook - Projet Vue.js CFC</p>
+        </footer>
     </div>
 </template>
+
 <style scoped>
-main {
-    padding: 40px;
+.app {
+    min-height: 100vh;
+}
+.hero {
+    background: #e8f1ec;
+    padding: 50px 30px;
     text-align: center;
 }
-h1 {
+.hero h1 {
     color: #173d35;
+    font-size: 32px;
+}
+.hero p {
+    color: #526b60;
+}
+footer {
+    background: #173d35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 13px;
 }
 </style>
